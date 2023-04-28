@@ -27,8 +27,8 @@ function appSwiper() {
       followFinger: true,
       freeMode: true,
       slideToClickedSlide: true,
-      slidesPerView: 1,
-      spaceBetween: 12,
+      slidesPerView: 'auto',
+      spaceBetween: 32,
       rewind: false,
       // Navigation arrows
       navigation: {
@@ -45,18 +45,18 @@ function appSwiper() {
       breakpoints: {
         // mobile landscape
         480: {
-          slidesPerView: 0.8,
-          spaceBetween: 12,
+          slidesPerView: 'auto',
+          spaceBetween: 32,
         },
         // tablet
         768: {
-          slidesPerView: 1,
-          spaceBetween: 12,
+          slidesPerView: 'auto',
+          spaceBetween: 32,
         },
         // desktop
         992: {
-          slidesPerView: 3.5,
-          spaceBetween: 12,
+          slidesPerView: 'auto',
+          spaceBetween: 32,
         },
       },
       scrollbar: {
