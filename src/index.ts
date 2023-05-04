@@ -43,5 +43,7 @@ window.Webflow.push(() => {
     });
 
   // Call the function to apply the animations
-  animateSwiperSlides();
+  if (window.innerWidth >= 1024) {
+    animateSwiperSlides();
+  }
 });
