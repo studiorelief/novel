@@ -5,7 +5,7 @@ function animateSwiperSlides() {
   // Set initial state for all ".swiper-slide" elements
   gsap.set('.swiper-slide', { width: 'auto' });
   gsap.set('.slider_p', { opacity: 0 });
-  gsap.set('.button.is-icon', { display: 'flex', opacity: 1 });
+  gsap.set('.button.is-icon', { display: 'flex', opacity: 0.5 });
   gsap.set('.slider_cards-h', { scale: 1 });
   gsap.set('.slider_cards-c-overlay', { opacity: 0 });
 
