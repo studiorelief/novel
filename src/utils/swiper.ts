@@ -25,7 +25,7 @@ function appSwiper() {
       speed: sliderDuration,
       autoHeight: false,
       followFinger: true,
-      freeMode: true,
+      freeMode: false,
       slideToClickedSlide: true,
       slidesPerView: 'auto',
       spaceBetween: 32,

@@ -1,4 +1,5 @@
 import { loadAttributesScript } from '$utils/fs-attributes';
+import { animateSwiperSlides } from '$utils/gsap';
 import { loadModelViewerScript } from '$utils/modal-viewer';
 import { appSwiper, loadSwiper } from '$utils/swiper';
 
@@ -40,5 +41,7 @@ window.Webflow.push(() => {
     .catch((error) => {
       console.error(error);
     });
+
+  // Call the function to apply the animations
+  animateSwiperSlides();
 });
-//
