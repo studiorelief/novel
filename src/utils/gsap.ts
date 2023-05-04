@@ -5,7 +5,7 @@ function animateSwiperSlides() {
   // Set initial state for all ".swiper-slide" elements
   gsap.set('.swiper-slide', { width: 'auto' });
   gsap.set('.slider_p', { opacity: 0 });
-  gsap.set('.button.is-icon.is-slider', { display: 'none' });
+  gsap.set('.button.is-icon', { display: 'flex', opacity: 1 });
   gsap.set('.slider_cards-h', { scale: 1 });
   gsap.set('.slider_cards-c-overlay', { opacity: 0 });
 
@@ -20,12 +20,12 @@ function animateSwiperSlides() {
 
       // Animate child elements of the clicked ".swiper-slide" element
       const sliderP = event.currentTarget.querySelector('.slider_p');
-      const buttonSlider = event.currentTarget.querySelector('.button.is-icon.is-slider');
+      const buttonSlider = event.currentTarget.querySelector('.button.is-icon');
       const sliderCardsH = event.currentTarget.querySelector('.slider_cards-h');
       const sliderCardsOverlay = event.currentTarget.querySelector('.slider_cards-c-overlay');
 
       gsap.to(sliderP, { opacity: 1, duration: 0.25 });
-      gsap.to(buttonSlider, { display: 'flex', duration: 0.25 });
+      gsap.to(buttonSlider, { display: 'flex', opacity: 1, duration: 0.25 });
       gsap.to(sliderCardsH, { scale: 2, duration: 0.25 });
       gsap.to(sliderCardsOverlay, { opacity: 1, duration: 0.25 });
 
@@ -41,12 +41,12 @@ function animateSwiperSlides() {
 
         // Animate sibling elements
         const sliderP = sibling.querySelector('.slider_p');
-        const buttonSlider = sibling.querySelector('.button.is-icon.is-slider');
+        const buttonSlider = sibling.querySelector('.button.is-icon');
         const sliderCardsH = sibling.querySelector('.slider_cards-h');
         const sliderCardsOverlay = sibling.querySelector('.slider_cards-c-overlay');
 
         gsap.to(sliderP, { opacity: 0, duration: 0.25 });
-        gsap.to(buttonSlider, { display: 'none', duration: 0.25 });
+        gsap.to(buttonSlider, { display: 'flex', opacity: 0, duration: 0.25 });
         gsap.to(sliderCardsH, { scale: 1, duration: 0.25 });
         gsap.to(sliderCardsOverlay, { opacity: 0, duration: 0.25 });
       });
