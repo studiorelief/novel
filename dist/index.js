@@ -4242,7 +4242,7 @@
   function animateSwiperSlides() {
     gsapWithCSS.set(".swiper-slide", { width: "auto" });
     gsapWithCSS.set(".slider_p", { opacity: 0 });
-    gsapWithCSS.set(".button.is-icon", { display: "flex", opacity: 0.5 });
+    gsapWithCSS.set(".button.is-icon", { display: "flex", opacity: 0 });
     gsapWithCSS.set(".slider_cards-h", { scale: 1 });
     gsapWithCSS.set(".slider_cards-c-overlay", { opacity: 0 });
     document.querySelectorAll(".swiper-slide").forEach((slide) => {
